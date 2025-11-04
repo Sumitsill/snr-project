@@ -1,6 +1,6 @@
 // Initialize Supabase
 const SUPABASE_URL = "https://YOUR_PROJECT_URL.supabase.co"; // Replace with your Supabase URL
-const SUPABASE_ANON_KEY = "YOUR_ANON_PUBLIC_KEY"; // Replace with your anon key
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN2dWVkaGpyaWtzbnl2c3dvY29oIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIyNzMxNTQsImV4cCI6MjA3Nzg0OTE1NH0.vkTPPinPA6dttnH1Kpi9QV2CFLZMpq1rbijDw2Idydc"; // Replace with your anon key
 
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
@@ -57,3 +57,4 @@ signupBtn.addEventListener("click", async (e) => {
     message.textContent = "✅ Account created! Check your email to verify.";
   }
 });
+
